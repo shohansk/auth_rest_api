@@ -45,7 +45,11 @@
 8. exit 
 ```
 
-
+### Project Setup:
+```shell
+1. git clone https://github.com/shohansk/auth_rest_api.git
+2. git switch development
+```
 
 
 ##### Create and Activate virtual environment
