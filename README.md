@@ -28,9 +28,6 @@
 
 ### Prerequisites
 - Python >= 3.9
-- `pip install djangorestframework`
-- `pip install djangorestframework-jwt`
-- `pip install drf-yasg`
 - PostgreSQL
 
 ### Database setup in Docker (Optional - Local)
@@ -50,13 +47,27 @@
 1. git clone https://github.com/shohansk/auth_rest_api.git
 2. git switch development
 ```
+**Notes:**
 
+***NB: Please convert the `env.example` to `.env` and put all necessary credentials*** 
 
 ##### Create and Activate virtual environment
 ```shell
-python3 -m venv .venv
-sourve .venv/bin/activate
+1. python3 -m venv .venv
+2. sourve .venv/bin/activate
+
 ```
+##### For Run Project
+```shell
+1. pip install -r requirements.txt
+2. python manage.py makemigrations
+3. python manage.py migrate
+4. python manage.py createsuperuser
+5. python manage.py runserver
+```
+**Notes:**
+
+***NB: For Doc (http://127.0.0.1:8000/redoc/)*** 
 
 ##### Apply Code Formate
 ```shell
